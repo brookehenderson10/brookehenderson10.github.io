@@ -1,0 +1,332 @@
+
+body{
+   font-family: 'Cabin', sans-serif;
+}
+.carousel-item {
+  height: 400px;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h3.slider-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    Z-INDEX: 100;
+    transform: translate(-50%);
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-size: 80px;
+    white-space: nowrap;
+    /*makes it one line*/
+    font-weight: bold;
+    color:#fff;
+    transition:.30s all;
+}
+h3.slider-text:hover {
+   color:#cd1660;
+}
+
+.map-section h2.heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+section, footer {
+    float: left;
+    width: 100%;
+}
+
+section.map-section {
+    padding: 40px 0;
+    background:#c7e7dc;
+    z-index: 1;
+}
+
+section.quiz-form {
+    padding: 30px;
+    background: #fff;
+}
+
+#navigation-fix {
+    position: fixed;
+    padding: 0;
+    right: 0;
+    top: 50%;
+    z-index: 400;
+    /* only way I could figure to position the nav instelf. The higher the number the higher on the x axis. */
+    width: 150px;
+    background: #17a2b8;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+    overflow: hidden;
+}
+
+ul.nav{
+   display:none;
+}
+
+.quiz-form h3 {
+    font-size: 18px;
+}
+
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+section.section-petition {
+    background: #e8f6f7;
+    text-align: center;
+    padding: 90px;
+}
+
+.carousel {
+    background: #000;
+}
+.carousel-item {
+    opacity: .85;
+}
+
+
+.quiz-form .card-header a{
+   color:#fff;
+}
+
+
+.quiz-form  .card {
+    border: 1px solid #17a2b8;
+}
+
+.quiz-form .card-header {
+    background: #17a2b8;
+    padding: 30px 20px;
+    border-radius: 0;
+    text-align: center;
+}
+
+
+.section-about{
+   padding:30px 0;
+   font-size: 20px;
+   font-family: 'cabin', Georgia, Times, serif;
+}
+.section-about h2{
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+div#navigation {
+    width: 100%;
+    padding: 10px;
+    transition: .30s all;
+    /*may adjust transition time and style later*/
+    background: #cd1660;
+    line-height: 40px;
+}
+
+
+div#navigation:hover{
+   background:#178aad;
+}
+
+ul.nav.navbar-nav {
+    width: 100%;
+}
+ul.nav.navbar-nav  a{
+   color:#fff;
+}
+ul.nav.navbar-nav a {
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 15px;
+    width: 100%;
+    transition: .30s all;
+    float: left;
+}
+
+ul.nav.navbar-nav a:hover{
+   background:#cd1660;
+}
+
+.question-section {
+    float: left;
+}
+
+.card-body.quiz-section {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background: #e8f6f7;
+}
+
+#intro {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.question-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.quiz-form .card-header a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#intro {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+	body {
+		margin: 0;
+		width: 100%;
+		padding: 5%;
+	}
+
+    .navigation {
+      margin:0;
+      width: 100%;
+  }
+  h3 {
+      max-width: 100%;
+  }
+  p {
+    font-size: 50%;
+}
+}
+
+
+
+    .fade {
+        opacity: 0;
+    }
+
+    canvas {
+        left: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+    }
+    .logo {
+        background-image: url(img/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 27px;
+        left: 30px;
+        position: absolute;
+        top: 24px;
+        width: 29px;
+    }
+    .menu {
+        background-image: url(img/top_menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 7px;
+        position: absolute;
+        right: 36px;
+        top: 34px;
+        width: 239px;
+    }
+    .title {
+        background-image: url(img/title.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 38px;
+        left: 50%;
+        margin-left: -124px;
+        margin-top: -19px;
+        position: absolute;
+        top: 50%;
+        width: 248px;
+    }
+
+    .buttons {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        left: 50%;
+        margin-left: -115px;
+        margin-top: 40px;
+        position: absolute;
+        top: 50%;
+        width: 230px;
+    }
+    .icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 56px;
+        width: 56px;
+    }
+
+
+.modal-content {
+    border: none;
+}
+.modal-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em
+}
+
+.modal-content ul{
+    list-style: none;
+}
+
+.top-ramotion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 444;
+    background: transparent;
+}
+
+.top-ramotion p{
+        text-align: center;
+    margin: auto 7em;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.top-ramotion h2{
+    line-height: 200px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.marker-image{
+    width: 115%;
+    margin-top: -14px;
+    margin-right: -17px;
+    margin-left: -21px;
+    margin-bottom: 1em;
+    max-height: 20em;
+}
+.leaflet-popup-content-wrapper{
+    overflow: hidden;
+}

@@ -1,0 +1,93 @@
+places =
+[
+ {
+   "placeName": "University of Wisconsin Madison",
+   "description": "University of Wisconsin-Madison was the third university to roll out a pilot program offering tampons free of charge in women's restrooms. The pilot program also includes some men's restrooms as well.",
+   "latitude": 43.0766,
+   "longitude": -89.401557
+ },
+ {
+   "placeName": "Emory University",
+   "description": "Emory University launched it's pilot program in the fall 2016 semester to provide free tampons. Tampon dispensers in three locations — a dining hall, the library and one of its academic buildings — were changed to accomodate the program.",
+   "latitude": 33.7912161,
+   "longitude": -84.3232577
+ },
+ {
+   "placeName": "Brown University",
+   "description": "Brown University launched its campuswide initiative to provide free tampons in the fall of 2016, stocking an estimat of 70 bathrooms — men’s, women’s and gender-neutral. Over 40 universities have reached out to Brown since seeking advice on how to launch their own programs.",
+   "latitude": 41.82682,
+   "longitude": -71.402931
+ },
+ {
+   "placeName": "Cornell University",
+   "description": "With backing from the University administration, Cornell University began providing free tampons in select restrooms, both female-identified and gender non-identified. The program was funded by their Student Health Services and the Office of Health Promotion.",
+   "latitude": 42.44932333,
+   "longitude": -76.47922764
+ },
+ {
+   "placeName": "Syracuse University began providing free menstrual care in November of 2016. According to Co-chair of the student life board Keelan Erhard, $1,000 was budgeted for the program, a small fee for student governments with budgets as large as the University of Florida.",
+   "description": "Syracuse University's Student Association is looking to offer free tampons to students on campus.",
+   "latitude": 43.038161,
+   "longitude": -76.134894
+ },
+ {
+   "placeName": "Connecticut College",
+   "description": "Within Student Center bathrooms, Connecticut College stocks bathrooms with pads and tampons. A survery conducted by advocacy organization Free the Tampons found that 86 percent of respondents reported having at least one experience when their period arrived unexpectedly in public and they were without the supplies they needed. By providing free menstrual care, Connecticut College aims to lower the percentage. ",
+   "latitude": 41.3825982,
+   "longitude": -72.1081324
+ },
+ {
+   "placeName": "University of Nebraska-Lincoln",
+   "description": "University of Nebraska-Lincoln has provided free tampons in women's and gender-neutral bathrooms since 2015",
+   "latitude": 40.820744,
+   "longitude": -96.7005
+ },
+ {
+   "placeName": "Columbia University",
+   "description": "In December of 2016, Columbia University launched a pilot program to distribute free tampons across campus — in female, male, and gender-neutral bathrooms in 10 academic buildings as well as in the school library.\n",
+   "latitude": 40.80753451,
+   "longitude": -73.96257309
+ },
+ {
+   "placeName": "University of Minnesota at Twin Cities",
+   "description": "The University of Minnesota has provided free menstrual supplies on campus for at least a decade, stocking one women's bathroom per building. In 2016 it began expanding to men's bathrooms in order to better serve their student population. ",
+   "latitude": 44.9848671,
+   "longitude": -93.1824609
+ },
+ {
+   "placeName": "University of Arizona",
+   "description": "After issuing 19 pages of demands to their administration, students at the University of Arizona won free tampons and pads for their Women's Resource Center. The center also provides condoms, which on average for a 12-pack costs about $11 according to ABC News, while the average 36-pack of tampons only cost $7, according to the Huffington Post.",
+   "latitude": 32.248814,
+   "longitude": -110.987419
+ },
+ {
+   "placeName": "Florida State University",
+   "description": "Because food stamps do not cover sanitary supplies, low income students have reported trading food stamps for tampons, according to the investigative fund. To provide for their student body, Florida State University began providing free menstrual care in The Union and The Student Life Center. ",
+   "latitude": 30.4418778,
+   "longitude": -84.2984889
+ },
+ {
+   "placeName": "Harvard University",
+   "description": "In 2017, the Undergraduate Council at Harvard College allocated $1,000 to provide menstrual hygiene products in freshman dorms. Girls sometimes miss school because they do not have menstrual products and face this stigma, Free the Tampons founder Kramer said. That’s why New York City passed legislation in July to provide free menstrual products in all public schools, shelters and correctional facilities.",
+   "latitude": 42.37133185,
+   "longitude": -71.11683287
+ },
+ {
+   "placeName": "Duke University",
+   "description": "In 2017, Duke university began providing free menstrual products in the Bryan Center bathrooms as part of a pilot program. The University launched the program after discussions with Duke Student Government. ",
+   "latitude": 36.000519,
+   "longitude": -78.938862
+ },
+ {
+   "placeName": "University of California Los Angeles",
+   "description": "In 2017, the Student Wellness Commission at UCLA became the first university on the west coast to offer free menstrual hygiene products to all students. The products are available at the Ashe Center and the LGBT Campus Resource Center.",
+   "latitude": 34.074949,
+   "longitude": -118.441318
+ },
+ {
+   "placeName": "The University of Florida",
+   "description": "Currently, the University of Florida does not offer free menstrual products anywhere on campus. Gators Matter, Period is trying to change that. To learn more, click on the dollar signs.",
+   "latitude": 29.651634,
+   "longitude": -82.324829
+ }
+]

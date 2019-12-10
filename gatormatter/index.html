@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gators Matter, Period</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+    <link rel="stylesheet" href="bower_components/leaflet.zoomhome/dist/leaflet.zoomhome.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+</head>
+
+
+<body>
+
+
+    <!-- for the water color effect-->
+    <!--  Navigation Starts. Need boostrap to make it easy and dropdown. ===================================================================================================== -->
+
+
+    <nav class="navbar navbar-default" id="navigation-fix">
+        <div id="navigation">Navigation</div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#petition">Sign The Petition</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Ends -->
+
+
+
+
+    <header class="image-slider" id="top">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!--tells the Bootstrap to start moving the carousel immediately when the page is done loading. Follow the example for naming -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <!--Data Slide needed to move the slide/picture and pick which one is first, using index. Must start at zero -->
+        <div class="carousel-inner" role="listbox">
+            <h3 class="slider-text">Gators Matter, Period</h3>
+            <!-- note:font is kind of ugly here. Active needed to start to indicate selection-->
+            <div class="carousel-item active" style="background-image: url('images/slide1.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('images/slide2.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('images/slide3.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('images/slide4.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('images/slide5.jpg')"></div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            <!-- hides the links. aria-hidden needed for the nav CSS-->
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+
+
+
+<header class="image-slider" id="top">
+    <div style="position: relative;width: 100%;height: 500px;">
+        <div class="top-ramotion">
+
+            <h2 class="heading">What We Do</h2>
+
+
+            <p>We are a coalition of student groups and community members who came together because we think that there should be free tampons and pads provided on campus in central locations. We are composed by the the National Women’s Liberation- Gainesville Chapter, Planned Parenthood Generation Action, Pride Student Union, and the Women’s Student Association. </p>
+
+            <p> We’re collecting signatures to prove to UF Faculty and Administration that this is an issue that matters and needs to be dealt with. As the top 9 poblic insitution in the country, we should be leading by example, but the map below tells another story.</p>
+            
+        </div>
+        <div class="fade">
+            <img src="img/splash.png">
+            <div class="top">
+
+            </div>
+            <div class="buttons">
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+
+<!-- // Slider Section Ends -->
+<!--// note: leave the button alone, it's working now. -->
+
+
+
+<!-- About Section Starts -->
+<!-- <section id="about" class="section-about">
+    <div class="container">
+        <h2 class="heading">What We Do</h2>
+
+
+        <p>We are a coalition of student groups and community members who came together because we think that there should be free tampons and pads provided on campus in central locations. We are composed by the the National Women’s Liberation- Gainesville Chapter, Planned Parenthood Generation Action, Pride Student Union, and the Women’s Student Association. </p>
+
+        <p> We’re collecting signatures to prove to UF Faculty and Administration that this is an issue that matters and needs to be dealt with. As the top 9 poblic insitution in the country, we should be leading by example, but the map below tells another story.</p>
+    </div>
+</section> -->
+<!-- // About Section Ends -->
+
+
+
+<!-- Map Section Starts  -->
+<section id="map" class="map-section">
+    <div class="container">
+        <h2 class="heading">Click below to find out which colleges in the U.S. offer free menstrual care.</h2>
+        <div id="chartdiv">
+            <div id="map_f"></div>
+        </div>
+    </div>
+</section>
+<!-- // Map Section Ends -->
+
+
+
+<!-- Quiz Section Starts  -->
+<section id="quiz" class="quiz-form">
+    <div class="container">
+
+      <!-- Quiz actual form Starts -->
+      <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+          <!--need this to make things collapse-->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why should you care? Click below to find out!</a>
+              </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body quiz-section">
+
+                <div id="intro">
+                    <section id="anchor" class="pink topbut" data-slide="#issuelist">
+                        <button type="button" class="issue btn btn-info btn-lg topbut" data-slide="#q1">Start Quiz</button>
+                    </section>
+                    <!-- I don't know if I really like how the button looks. Like i didn't want the page super long so I like that it collapses, but I'm not sure.-->
+                </div>
+
+                <!-- question-section -->
+                <div class="question-section">
+                    <section id="q1" class="slides">
+                        <h2>Only women benefit from free menstrual care on college campuses.</h2>
+                        <button class="btn btn-info otherbut" data-slide="#q1true" id="true1">True</button>
+                        <button class="btn btn-info  otherbut" data-slide="#q1false" id="false1">False</button>
+                    </section>
+
+                    <section id="q1true" class="slides pink">
+                        <h2>Answer: True </h2>
+                        <p>Not quite. Even though menstruation has been strongly associated with womanhood, trans-men also experience menstruation. When campuses do not provide free menstrual care in a safe location, it can put trans-men at risk of physical and emotional danger. The reality is that everyone benefits from a culture of care and inclusive healthcare, and that means providing free pads and tampons in every bathroom.</p>
+                        <button class="btn btn-info otherbut" data-slide="#q2"> Next question</button>
+                    </section>
+
+                    <section id="q1false" class="slides pink">
+                        <h2>Answer: False </h2>
+                        <p>That’s right! Even though menstruation has been strongly associated with womanhood, trans-men also experience menstruation. When campuses do not provide free menstrual care in a safe location, it can put trans-men at risk of physical and emotional danger. Everyone benefits from a culture of care and inclusive healthcare</p>
+                        <button class="btn btn-info otherbut" data-slide="#q2"> Next question</button>
+                    </section>
+                </div>
+                <!-- question-section ends -->
+
+                <!-- question-section -->
+                <div class="question-section">
+                    <section id="q2" class="slides">
+                        <h2>Providing free menstrual care at the University of Florida will make my tuition even more expensive.</h2>
+                        <button class="btn btn-info  otherbut" data-slide="#q2true" id="true1">True</button>
+                        <button class="btn btn-info  otherbut" data-slide="#q2false" id="false1">False</button>
+                    </section>
+
+                    <section id="q2true" class="slides pink">
+                        <h2>Answer: True </h2>
+                        <p>Actually, it won’t. Gators Matter, Period will be able to receive funding allocated through the health and services fee of our tuition. We believe that the dispensers could be paid for by SG’s Activity and Service Fee. Currently if a menstruating person gets their period on campus, their main accessibility is through the POD market, which has inflated prices for tampons and pads. Even the purchase of one box would extremely outweigh what any given student would put into this initiative through their health and services fee, due to the cheap price of buying in bulk.</p>
+                        <button class="btn btn-info otherbut" data-slide="#q3"> Next question</button>
+                    </section>
+
+                    <section id="q2false" class="slides pink">
+                        <h2>Answer: False </h2>
+                        <p>You nailed it! Gators Matter, Period will be able to receive funding allocated through the health and services fee of our tuition, so there won’t be a rise in cost. SG’s Activity and Service Fee could cover the cost of dispensers as well. Currently if a menstruating person gets their period on campus, their main accessibility is through the POD market, which has inflated prices for tampons and pads. Even the purchase of one box would extremely outweigh what any given student would put into this initiative through their health and services fee, due to the cheap price of buying in bulk.</p>
+                        <button class="btn btn-info otherbut" data-slide="#q3"> Next question</button>
+                    </section>
+                </div>
+                <!-- question-section ends -->
+
+                <!-- question-section -->
+                <div class="question-section">
+                    <section id="q3" class="slides">
+                        <h2>Just because I’m a Gator *chomp chomp* that doesn’t mean I should care about this initiative.</h2>
+                        <button class="btn btn-info  otherbut" data-slide="#q3true" id="true1">True</button>
+                        <button class="btn btn-info  otherbut" data-slide="#q3false" id="false1">False</button>
+                    </section>
+
+                    <section id="q3true" class="slides pink">
+                        <h2>Answer: True </h2>
+                        <p>Members of the Gators Matter, Period collective would have to disagree. Other than just caring for your fellow gator, the University of Florida is the number 9 public institution in the country. To continue toward UF’s goal of preeminence, we should be leading the way, and that means providing free menstrual health care, just like we provide free ponchos. It is a tangible action that we can take to show that we are moving in a more accessible and inclusive direction, just like the schools who have already implemented it. If Florida State University (and more) can do it, why can’t we?</p>
+                        <button class="btn btn-info otherbut" data-slide="#q4"> Next question</button>
+                    </section>
+
+                    <section id="q3false" class="slides pink">
+                        <h2>Answer: False </h2>
+                        <p>Of course! Other than caring for your fellow gator, the University of Florida is the number 9 public institution in the country. To continue toward UF’s goal of preeminence, we should be leading the way and doing so by example. Other prominent institutions have, and are, implementing similar programs; they are trying to prove to their students that they care about their lived experiences. Schools like Harvard, Brown, Emory, and FSU, (and more) have already implemented programs like this, and we can’t stand to fall behind.</p>
+                        <button class="btn btn-info otherbut" data-slide="#q4"> Next question</button>
+                    </section>
+                </div>
+                <!-- question-section ends -->
+
+                <!-- question-section -->
+                <div class="question-section">
+                    <section id="q4" class="slides">
+                        <h2>The presence of free tampons and pads on campus does not affect me.</h2>
+                        <button class="btn btn-info  otherbut" data-slide="#q4true" id="true1">True</button>
+                        <button class="btn btn-info  otherbut" data-slide="#q4false" id="false1">False</button>
+                    </section>
+
+                    <section id="q4true" class="slides pink">
+                        <h2>Answer: True </h2>
+                        <p>That’s not quite true. Gators Matter, Period believes that menstruation is a health concern that should not be ignored just because it only physically affects those who menstruate on our campus. We find this to be exclusionary. In reality, everyone benefits when others feel comfortable on campus and don’t have to worry about an early period making someone skip class, or feel ashamed or anxious. This type of event can negatively affect the student, but also their classmates, who don’t get to hear that students ideas or opinions. It also allows shame around the topic to continue to hinder students from speaking up and advocating for one’s position because they are instead unfocused and overly anxious. This initiative will help foster the culture of care that our university tries to encourage and promote, by valuing the experience of all students. </p>
+                        <button class="btn btn-info otherbut" data-slide="#q5"> Next question</button>
+                    </section>
+
+                    <section id="q4false" class="slides pink">
+                        <h2>Answer: False </h2>
+                        <p>You got it! Every single person who visits will benefit when we can all feel comfortable on campus without having to worry about an early period making someone skip class, or feel ashamed or anxious. This type of event can not only negatively affect the student, but also their classmates. Your fellow students are asking that you support them and their health needs. We the members of the Gators Matter, Period collective would say that their desires affect us. This initiative’s ultimate goal is to help foster a culture of caring that our university tries to encourage and promote (through offices such as You Matter, We Care), by valuing the experience of all students. </p>
+                        <button class="btn btn-info otherbut" data-slide="#q5"> Next question</button>
+                    </section>
+                </div>
+                <!-- question-section ends -->
+
+                <!-- question-section -->
+                <div class="question-section">
+                    <section id="q5" class="slides">
+                        <h2>We don’t need free menstrual care because students can afford to buy it on their own.</h2>
+                        <button class="btn btn-info  otherbut" data-slide="#q5true" id="true1">True</button>
+                        <button class="btn btn-info  otherbut" data-slide="#q5false" id="false1">False</button>
+                    </section>
+
+                    <section id="q5true" class="slides pink">
+                        <h2>Answer: True </h2>
+                        <p> It would be wonderful if all students could afford to pay for their health needs, but it just isn’t true. According to the U.S. Census Bureau, more than half (51.8 percent) of students living off-campus and not with relatives live below the poverty line. And According to the National Center for Education Statistics, 29 percent of all U.S. students have household incomes below $20,000, and 79 percent of them work full or part time in addition to taking classes. Because of their financial burdens, many students are forced to drop out of school. They can not afford to feed themselves, much less buy their own menstrual products. But the University of Florida can help break the cycle of poverty by providing for this health need that over half of its students encounter.</p>
+                        <input type="button" class="btn btn-info" value="Share what you learned" onclick="location.href = 'https://twitter.com/home?status=Care%20about%20your%20fellow%20Gator?%20Sign%20this!%20https%3A//www.change.org/p/gators-matter-period';" >
+                    </section>
+
+                    <section id="q5false" class="slides pink">
+                        <h2>Answer: False </h2>
+                        <p>Unfortunately, you are correct. As the economy changes, so does student poverty. According to the U.S. Census Bureau, more than half (51.8 percent) of students living off-campus and not with relatives live below the poverty line. And According to the National Center for Education Statistics, 29 percent of all U.S. students have household incomes below $20,000, and 79 percent of them work full or part time in addition to taking classes. We need free menstrual care to lessen the financial burden our fellow students face and create a more comfortable learning environment. All it takes is your signature on the Gators Matter, Period petition. </p>
+                        <input type="button" class="btn btn-info" value="Share what you learned" onclick="location.href = 'https://twitter.com/home?status=Care%20about%20your%20fellow%20Gator?%20Sign%20this!https%3A//www.change.org/p/gators-matter-period';">
+                    </section>
+                </div>
+                <!-- question-section ends -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // Quiz Ends -->
+
+<!-- Survey Graph Starts -->
+<div class="servay-graph">
+    <div id="chartContainer" style="height: 0px; width: 100;"></div>
+</div>
+<!-- //Survey Graphs Ends -->
+
+</div>
+</section>
+<!-- // Quiz Section Starts -->
+
+
+
+
+<!-- Petition Section Starts ===================================================================================================== -->
+<section id="petition" class="section-petition">
+    <div class="container">
+        <a href="https://www.change.org/p/gators-matter-period" class="btn btn-lg btn-info" target="_blank">Sign Petition To Support Gators Matter, Period</a>
+    </div>
+</section>
+<!-- // Petition Section ends -->
+
+
+
+
+
+<!-- Footer Starts ===================================================================================================== -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">
+            <a id="demo01" href="#animatedModal">Sources</a>
+        </p>
+    </div>
+</footer>
+<!-- // Footer Ends -->
+
+
+
+<div id="animatedModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-animatedModal"> 
+        <p style="text-align: right; padding: 1em">
+            <img class="closebt" src="img/closebt.svg"></p>
+
+        </div>
+
+        <div class="modal-content" style="background: transparent;">
+          <!--Your modal content goes here-->
+          <ul>
+            <li>
+                <a href="#">sample</a>
+            </li>
+            <li>
+                <a href="#">sample</a>
+            </li>
+            <li>
+                <a href="#">sample</a>
+            </li>
+            <li>
+                <a href="#">sample</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!-- Bootstrap,jquery,  JavaScript. Hosting instead of CND  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/colleges.json">
+</script>
+<script src="js/florida.json">
+</script>
+
+<script src="js/animatedModal.min.js"></script>
+
+<script src="bower_components/three.js/build/three.js"></script>
+
+<script src="bower_components/aquarelle/Aquarelle.js"></script>
+
+<script src="bower_components/three.js/examples/js/postprocessing/EffectComposer.js"></script>
+
+<script src="bower_components/three.js/examples/js/postprocessing/ClearPass.js"></script>
+<script src="bower_components/aquarelle/AquarellePass.js"></script>
+<script src="bower_components/three.js/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="bower_components/three.js/examples/js/shaders/CopyShader.js"></script>
+<script src="bower_components/leaflet.zoomhome/dist/leaflet.zoomhome.min.js"></script>
+
+<script src="js/myscript.js"></script>
+<script>
+    var mymap = L.map('chartdiv',{zoomControl: false}).setView([34.741,-81.026],4.4);
+    var zoomHome = L.Control.zoomHome();
+    zoomHome.addTo(mymap);
+
+    // var floridamap = L.icon({
+        //     iconUrl: 'images/floridamap.png',
+        //     iconSize:     [20, 20]
+        // })
+
+        mymap.on('popupopen', function(centerMarker) {
+            for (var i=0; i< florida.length; i++) {
+                let str = florida[i].placeName.replace(/\s/g, '')
+                L.marker( [florida[i].latitude, florida[i].longitude],{icon: L.icon({   iconUrl: 'images/floridamap.png',
+                   iconSize:     [40, 40]})} )
+                .bindPopup( '<img class="marker-image" src="images/'+str+'.JPG"><h3>' + florida[i].placeName + '<\/h3>'+'<p style="margin:4px; padding:0">'+florida[i].description +'<\/p>')
+                .addTo( mymap );
+            }
+            console.log(centerMarker);
+            var cM = mymap.project(centerMarker.popup._latlng);
+            cM.y -= centerMarker.popup._container.clientHeight/2
+            mymap.setView([centerMarker.popup._latlng.lat,centerMarker.popup._latlng.lng],14, {animate: true});
+        });
+
+        var myIcon = L.icon({
+            iconUrl: 'images/pin.png',
+            iconSize:     [30, 30]
+        });
+
+        // var florida = L.icon({
+            //     iconUrl: 'images/florida.png',
+            //     iconSize:     [20, 20]
+            // })
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/brooke8henderson/cj9xomcf96vjp2ro3a6ohce61/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYnJvb2tlOGhlbmRlcnNvbiIsImEiOiJjajl4b2tkcDIweTM3MzNsNzE3dm1kempxIn0.WTkyxtsijwoeWWYGXF6rrw', {attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap<\/a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA<\/a>, Imagery ©️ <a href="http://mapbox.com">Mapbox<\/a>',
+                maxZoom: 18
+            }).addTo(mymap);
+
+
+            // changed map to mymap. That's why pins weren't showing.
+            for (var i=0; i< places.length; i++) {
+                if(places[i].placeName == "The University of Florida"){
+                    L.marker( [places[i].latitude, places[i].longitude],{icon: L.icon({
+                       iconUrl: 'images/florida.png',
+                       iconSize:     [20, 20]
+                   })} )
+                    .bindPopup( '<img class="marker-image" src="img/univ.jpg"><h4>' + places[i].placeName + '<\/h4>'+'<p style="margin:4px; padding:0">'+places[i].description +'<\/p>')
+                    .addTo( mymap );
+                }
+                else{
+                  L.marker( [places[i].latitude, places[i].longitude],{icon: myIcon} )
+                  .bindPopup( '<h3>' + places[i].placeName + '<\/h3>'+'<p style="margin:4px; padding:0">'+places[i].description +'<\/p>')
+                  .addTo( mymap );
+              }
+          }
+
+      </script>
+
+      <script type="text/javascript">
+        $(function(){
+          $("#demo01").animatedModal();
+
+      })
+  </script>
+
+  <script>
+
+    var fade = document.querySelector('.fade');
+    var topNav = document.querySelector('.top');
+    var title = document.querySelector('.title');
+    var icons = Array.prototype.slice.call(document.querySelectorAll('.icon'));
+
+    var image = document.getElementsByTagName('img')[0];
+    var aquarelle = new Aquarelle(image, 'img/mask.png', {
+        autoplay: true,
+        loop: true
+    });
+
+    aquarelle.addEventListener('created', function() {
+        var canvas = this.getCanvas();
+        canvas.removeAttribute('style');
+        image.parentNode.insertBefore(canvas, image.nextSibling);
+        image.parentNode.removeChild(image);
+    });
+
+    aquarelle.addEventListener('changed', function(event) {
+        fade.style.opacity = this.transitionInRange(1, 0, 7183, 7933);
+
+        topNav.style.opacity = this.transitionInRange(0, 1, 4330, 5660);
+
+        var canvas = this.getCanvas();
+        canvas.style.webkitFilter = 'blur(' + this.transitionInRange(0, 24, 3000) + 'px)';
+        canvas.style.webkitTransform = canvas.style.transform = 'translate(-50%, -50%) scale(' + this.transitionInRange(.75, 1) + ')';
+
+        //title.style.opacity = this.transitionInRange(0, 1, 0, 2016);
+        //title.style.webkitTransform = title.style.transform = 'scale(' + this.transitionInRange(.8, 1, 0, 5883) + ')';
+
+        icons.forEach(function(icon) {
+            icon.style.webkitFilter = 'blur(' + event.target.transitionInRange(4, 0, 3433, 4149) + 'px)';
+            icon.style.opacity = event.target.transitionInRange(0, 1, 3433, 4266);
+            icon.style.webkitTransform = icon.style.transform = 'scale(' + event.target.transitionInRange(1.3, 1, 3433, 4400) + ')';
+        });
+    });
+
+</script>
+</body>
+
+</html>

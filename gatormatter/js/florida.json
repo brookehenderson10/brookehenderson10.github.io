@@ -1,0 +1,33 @@
+florida =
+[
+ {
+   "placeName": "Reitz Union",
+   "description": "Students can buy menstrual care items from the Reitz Union POD Market. A pack of tampons can average $7.99 a box, two dollars more than what it would cost for student government to provide one student with tampons for a year.",
+   "latitude": 29.644984,
+   "longitude": -82.348543
+ },
+ {
+   "placeName": "Beaty Towers",
+   "description": "Students can buy menstrual care items from the Beaty Towers POD Market. A pack of tampons can average $7.99 a box, two dollars more than what it would cost for student government to provide one student with tampons for a year.",
+   "latitude": 29.644088,
+   "longitude": -82.340738
+ },
+ {
+   "placeName": "The Hub",
+   "description": "Students can buy menstrual care items from the new Hub POD Market. A pack of tampons can average $7.99 a box, two dollars more than what it would cost for student government to provide one student with tampons for a year.",
+   "latitude": 29.648233,
+   "longitude": -82.345624
+ },
+ {
+   "placeName": "Graham",
+   "description": "Students can buy menstrual care items from the Graham Area POD Market. A pack of tampons average $7.99 a box, two dollars more than what it would cost for student government to provide one student with tampons for a year.",
+   "latitude": 29.646194,
+   "longitude": -82.350747
+ },
+ {
+   "placeName": "Rawlings",
+   "description": "Students can buy menstrual care items from the Rawlings POD Market. A pack of tampons can average $7.99 a box, two dollars more than what it would cost for student government to provide one student with tampons for a year.",
+   "latitude": 29.64624,
+   "longitude": -82.34296
+ }
+]
